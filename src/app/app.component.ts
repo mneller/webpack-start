@@ -8,7 +8,7 @@ import '../../public/css/styles.css';
 export class AppComponent implements OnInit{
 
     getHugo () {
-        const x = 1763;
+        const x = 1778;
         return 'Hugo was here' + x;
     };
 

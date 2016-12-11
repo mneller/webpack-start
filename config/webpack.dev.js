@@ -5,7 +5,7 @@ var helpers = require('./helpers');
 
 module.exports = webpackMerge(commonConfig, {
     //devtool: 'cheap-module-eval-source-map',
-    devtool: 'source-map',
+        devtool: 'source-map',
 
     output: {
         path: helpers.root('dist'),
@@ -18,10 +18,10 @@ module.exports = webpackMerge(commonConfig, {
         new ExtractTextPlugin('[name].css')
     ],
 
-    devServer: {
+        devServer: {
         historyApiFallback: true,
         stats: 'minimal',
         // CHME: Added this line to run smart with Webstorm debugger.
-        contentBase: "./dist"
+        contentBase: './dist'
     }
 });
